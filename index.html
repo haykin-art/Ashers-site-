@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Эшерс — искусство быть собой</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <!-- ===== ШАПКА ===== -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                эшерс <span>·</span>
+                <span class="sub">искусство быть собой</span>
+            </div>
+            <nav class="nav">
+                <a class="active" data-page="home">Главная</a>
+                <a data-page="about">О нас</a>
+                <a data-page="services">Услуги</a>
+                <a data-page="reviews">Отзывы</a>
+                <a data-page="gallery">Портфолио</a>
+                <a data-page="booking">Запись</a>
+                <a data-page="contacts">Контакты</a>
+                <a href="tel:+79018073574" class="phone-link">📞 +7 (901) 807-35-74</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ===== ОСНОВНОЙ КОНТЕНТ ===== -->
+    <div class="page-wrapper">
+        <div class="container">
+
+            <!-- ===== ГЛАВНАЯ ===== -->
+            <div class="page active" id="page-home">
+                <section class="hero">
+                    <div class="brand">эшерс <span>·</span></div>
+                    <div class="slogan">искусство быть собой</div>
+                    <div class="divider"></div>
+                    <p class="desc">
+                        Пространство для раскрытия индивидуальности. Здесь каждая услуга
+                        и каждый штрих подчеркивают уникальность женщины, её стиль,
+                        характер и внутреннюю гармонию.
+                    </p>
+                    <div class="btn-group">
+                        <button class="btn-primary" onclick="navigateTo('booking')">Записаться</button>
+                        <button class="btn-secondary" onclick="navigateTo('about')">О салоне</button>
+                    </div>
+                </section>
+            </div>
+
+            <!-- ===== О НАС (с фото 1.jpg в корне) ===== -->
+            <div class="page" id="page-about">
+                <h2 class="section-title">О <span>салоне</span></h2>
+                <div class="divider-gold"></div>
+                <div class="about-grid">
+                    <div class="about-text">
+                        <p class="highlight">Эшерс — это не просто салон красоты, а пространство для раскрытия индивидуальности.</p>
+                        <p>Здесь каждая услуга и каждый штрих подчеркивают уникальность женщины, её стиль, характер и внутреннюю гармонию.</p>
+                        <p><strong>Наши ценности:</strong> персональный подход к каждому клиенту, искусство подчеркивать естественную красоту, премиальное качество сервисов и авторские техники ухода, уют и эстетика в каждой детали.</p>
+                        <p><strong>Чем мы отличаемся:</strong> мастера-профессионалы, которые видят личность в каждом госте. Консультации по созданию индивидуального стиля. Закрытая, камерная атмосфера с заботой о каждом.</p>
+                    </div>
+                    <div class="about-image" style="background-image: url('1.jpg'); background-size: cover; background-position: center;"></div>
+                </div>
+
+                <!-- Ценности -->
+                <div class="values-grid">
+                    <div class="value-card">
+                        <div class="icon">🤍</div>
+                        <h4>Персональный подход</h4>
+                        <p>К каждому клиенту — с вниманием и заботой</p>
+                    </div>
+                    <div class="value-card">
+                        <div class="icon">✨</div>
+                        <h4>Естественная красота</h4>
+                        <p>Подчеркиваем, а не меняем</p>
+                    </div>
+                    <div class="value-card">
+                        <div class="icon">🏆</div>
+                        <h4>Премиальный сервис</h4>
+                        <p>Авторские техники и лучшие материалы</p>
+                    </div>
+                    <div class="value-card">
+                        <div class="icon">🕯️</div>
+                        <h4>Уют и эстетика</h4>
+                        <p>Атмосфера, в которую хочется возвращаться</p>
+                    </div>
+                </div>
+            </div>
+
+<!-- ===== УСЛУГИ (сетка по левому краю) ===== -->
+<div class="page" id="page-services">
+    <h2 class="section-title">Наши <span>услуги</span></h2>
+    <p class="section-sub">Широкий спектр услуг для вашей красоты</p>
+
+    <!-- ===== МАКИЯЖ ===== -->
+    <h3 style="color: #d4b8a0; font-size: 28px; font-weight: 300; letter-spacing: 4px; margin-top: 40px; margin-bottom: 24px; text-align: center;">💄 Макияж</h3>
+    <div class="services-grid" style="justify-content: flex-start;">
+        <div class="service-card">
+            <div class="service-image" style="background-image: url('services_images/1.jpg');"></div>
+            <h3>Нюдовый макияж</h3>
+            <div class="desc">Нежный, естественный, подчеркивающий красоту</div>
+            <div class="price">3 000 ₽</div>
+            <div style="color: #888; font-size: 13px; font-family: 'Segoe UI', Arial, sans-serif; margin-top: 6px;">⏱ 1 час</div>
+        </div>
+        <div class="service-card">
+            <div class="service-image" style="background-image: url('services_images/2.jpg');"></div>
+            <h3>Вечерний макияж</h3>
+            <div class="desc">Стойкий, яркий, с акцентом на глаза или губы</div>
+            <div class="price">3 000 ₽</div>
+            <div style="color: #888; font-size: 13px; font-family: 'Segoe UI', Arial, sans-serif; margin-top: 6px;">⏱ 1 час</div>
+        </div>
+        <div class="service-card">
+            <div class="service-image" style="background-image: url('services_images/3.jpg');"></div>
+            <h3>Свадебный макияж</h3>
+            <div class="desc">Создание макияжа в день свадьбы, любой на ваш выбор</div>
+            <div class="price">3 000 ₽</div>
+            <div style="color: #888; font-size: 13px; font-family: 'Segoe UI', Arial, sans-serif; margin-top: 6px;">⏱ 1 час</div>
+        </div>
+        <div class="service-card">
+            <div class="service-image" style="background-image: url('services_images/4.jpg');"></div>
+            <h3>Лифтинг-макияж</h3>
+            <div class="desc">Визуальное омоложение, скрытие недостатков, акцент на глаза</div>
+            <div class="price">3 000 ₽</div>
+            <div style="color: #888; font-size: 13px; font-family: 'Segoe UI', Arial, sans-serif; margin-top: 6px;">⏱ 1 час</div>
+        </div>
+        <div class="service-card">
+            <div class="service-image" style="background-image: url('services_images/5.jpg');"></div>
+            <h3>Экспресс макияж</h3>
+            <div class="desc">Легкий, без акцентов, идеальный тон и коррекция</div>
+            <div class="price">2 000 ₽</div>
+            <div style="color: #888; font-size: 13px; font-family: 'Segoe UI', Arial, sans-serif; margin-top: 6px;">⏱ 30 мин</div>
+        </div>
+    </div>
+
+    <!-- ===== МАКИЯЖ + ПРИЧЕСКА ===== -->
+    <h3 style="color: #d4b8a0; font-size: 28px; font-weight: 300; letter-spacing: 4px; margin-top: 50px; margin-bottom: 24px; text-align: center;">👑 Макияж + прическа</h3>
+    <div class="services-grid" style="justify-content: flex-start;">
+        <div class="service-card">
+            <div class="service-image" style="background-image: url('services_images/6.jpg');"></div>
+            <h3>Свадебный образ</h3>
+            <div class="desc">Полный образ в день свадьбы (макияж + прическа)</div>
+            <div class="price">6 000 ₽</div>
+            <div style="color: #888; font-size: 13px; font-family: 'Segoe UI', Arial, sans-serif; margin-top: 6px;">⏱ 2 часа</div>
+        </div>
+        <div class="service-card">
+            <div class="service-image" style="background-image: url('services_images/7.jpg');"></div>
+            <h3>Детский образ</h3>
+            <div class="desc">Для выпускного, конкурса, выступления</div>
+            <div class="price">2 500 ₽</div>
+            <div style="color: #888; font-size: 13px; font-family: 'Segoe UI', Arial, sans-serif; margin-top: 6px;">⏱ 1 час</div>
+        </div>
+        <div class="service-card">
+            <div class="service-image" style="background-image: url('services_images/8.jpg');"></div>
+            <h3>Полный образ</h3>
+            <div class="desc">Любой макияж + любая прическа</div>
+            <div class="price">6 000 ₽</div>
+            <div style="color: #888; font-size: 13px; font-family: 'Segoe UI', Arial, sans-serif; margin-top: 6px;">⏱ 2 часа</div>
+        </div>
+    </div>
+
+    <!-- ===== ПРИЧЕСКИ ===== -->
+    <h3 style="color: #d4b8a0; font-size: 28px; font-weight: 300; letter-spacing: 4px; margin-top: 50px; margin-bottom: 24px; text-align: center;">💇 Прически</h3>
+    <div class="services-grid" style="justify-content: flex-start; grid-template-columns: repeat(4, 1fr);">
+        <div class="service-card">
+            <div class="service-image" style="background-image: url('services_images/9.jpg');"></div>
+            <h3>Прическа</h3>
+            <div class="desc">Создание любой прически на ваш выбор</div>
+            <div class="price">2 500 ₽</div>
+            <div style="color: #888; font-size: 13px; font-family: 'Segoe UI', Arial, sans-serif; margin-top: 6px;">⏱ 1 час</div>
+        </div>
+    </div>
+
+    <!-- ===== ОБУЧЕНИЕ ===== -->
+    <h3 style="color: #d4b8a0; font-size: 28px; font-weight: 300; letter-spacing: 4px; margin-top: 50px; margin-bottom: 24px; text-align: center;">📚 Обучение</h3>
+    <div class="services-grid" style="justify-content: flex-start;">
+        <div class="service-card">
+            <div class="service-image" style="background-image: url('services_images/10.jpg');"></div>
+            <h3>Курс по прическам</h3>
+            <div class="desc">Профессиональный курс по созданию причесок</div>
+            <div class="price">25 000 ₽</div>
+            <div style="color: #888; font-size: 13px; font-family: 'Segoe UI', Arial, sans-serif; margin-top: 6px;">⏱ 5 часов (в 1 день)</div>
+        </div>
+        <div class="service-card">
+            <div class="service-image" style="background-image: url('services_images/11.jpg');"></div>
+            <h3>Базовый курс «Визажист с нуля»</h3>
+            <div class="desc">Полное обучение профессии визажиста</div>
+            <div class="price">45 000 ₽</div>
+            <div style="color: #888; font-size: 13px; font-family: 'Segoe UI', Arial, sans-serif; margin-top: 6px;">⏱ 11 дней (6 ч в день)</div>
+        </div>
+        <div class="service-card">
+            <div class="service-image" style="background-image: url('services_images/12.jpg');"></div>
+            <h3>Повышение для визажистов</h3>
+            <div class="desc">Повышение квалификации для действующих визажистов</div>
+            <div class="price">8 000 ₽</div>
+            <div style="color: #888; font-size: 13px; font-family: 'Segoe UI', Arial, sans-serif; margin-top: 6px;">⏱ 6 часов (в 1 день)</div>
+        </div>
+        <div class="service-card">
+            <div class="service-image" style="background-image: url('services_images/13.jpg');"></div>
+            <h3>Курс «Сам себе визажист» 1 день</h3>
+            <div class="desc">Научитесь делать себе нюдовый макияж</div>
+            <div class="price">5 500 ₽</div>
+            <div style="color: #888; font-size: 13px; font-family: 'Segoe UI', Arial, sans-serif; margin-top: 6px;">⏱ 3 часа</div>
+        </div>
+        <div class="service-card">
+            <div class="service-image" style="background-image: url('services_images/14.jpg');"></div>
+            <h3>Курс «Сам себе визажист» 2 дня</h3>
+            <div class="desc">Научитесь делать нюдовый и вечерний макияж</div>
+            <div class="price">8 500 ₽</div>
+            <div style="color: #888; font-size: 13px; font-family: 'Segoe UI', Arial, sans-serif; margin-top: 6px;">⏱ 6 часов (в 1 день)</div>
+        </div>
+    </div>
+
+    <!-- ===== ВЫЕЗД ===== -->
+    <h3 style="color: #d4b8a0; font-size: 28px; font-weight: 300; letter-spacing: 4px; margin-top: 50px; margin-bottom: 24px; text-align: center;">🚗 Выезд</h3>
+    <div class="services-grid" style="justify-content: flex-start; grid-template-columns: repeat(4, 1fr);">
+        <div class="service-card">
+            <div style="font-size: 48px; text-align: center; margin-bottom: 10px; color: #d4b8a0;">🚗</div>
+            <h3>Выезд по городу</h3>
+            <div class="desc">Энгельс и Саратов</div>
+            <div class="price">3 000 ₽</div>
+            <div style="color: #888; font-size: 13px; font-family: 'Segoe UI', Arial, sans-serif; margin-top: 6px;">⏱ 1 час</div>
+            <div style="color: #666; font-size: 12px; font-family: 'Segoe UI', Arial, sans-serif; margin-top: 8px; border-top: 1px solid #2a221e; padding-top: 10px;">📍 Выезд в район — договорная</div>
+        </div>
+    </div>
+</div>
+
+            <!-- ===== ОТЗЫВЫ ===== -->
+            <div class="page" id="page-reviews">
+                <h2 class="section-title">Отзывы <span>клиентов</span></h2>
+                <p class="section-sub">Что говорят о нас наши гости</p>
+                <div class="reviews-grid">
+                    <div class="review-card">
+                        <div class="stars">★★★★★</div>
+                        <div class="name">Елена К.</div>
+                        <div class="level">Знаток города 3 уровня</div>
+                        <span class="date">17 октября 2025</span>
+                        <div class="text">«Приходила на полный образ (макияж + укладка) к мастеру Алена, осталась довольна, целый вечер собирала комплименты о своем образе) также хожу на маникюр к мастеру Анастасии, быстро и качественно, маникюр держится по 1,5 месяца) новая, уютная, эстетичная студия, однозначно рекомендую к посещению.»</div>
+                    </div>
+
+                    <div class="review-card">
+                        <div class="stars">★★★★★</div>
+                        <div class="name">Екатерина Щербина</div>
+                        <div class="level">Знаток города 3 уровня</div>
+                        <span class="date">17 октября 2025</span>
+                        <div class="text">«Несколько раз ходила на макияж и полный образ к Алене. Она делает очень красивый и стойкий макияж. Студия уютная. Вернусь туда еще и всем советую попробовать) Добавила несколько фото работ Алены 😍»</div>
+                    </div>
+
+                    <div class="review-card">
+                        <div class="stars">★★★★★</div>
+                        <div class="name">Екатерина М.</div>
+                        <div class="level">Знаток города 3 уровня</div>
+                        <span class="date">14 октября 2025</span>
+                        <div class="text">«Посещаю наращивание ресничек не первый месяц. Очень нравится салон и его месторасположение. Была сегодня на наращивание ресниц 3D! Оля творит чудеса: делает быстро и качественно. Спасибо Оле за работу!»</div>
+                    </div>
+
+                    <div class="review-card">
+                        <div class="stars">★★★★★</div>
+                        <div class="name">valeriaKrivoSeeva</div>
+                        <div class="level">Знаток города 2 уровня</div>
+                        <span class="date">16 октября 2025</span>
+                        <div class="text">«Не первый и не последний раз посещаю салон Ashers. Идеально всё, начиная от местоположения, сервиса, красивого и чистого салона, заканчивая высококлассными специалистами знающими своё дело на все 1000%. Девочки, придя туда один раз вы ни на что его не променяете.»</div>
+                    </div>
+
+                    <div class="review-card">
+                        <div class="stars">★★★★★</div>
+                        <div class="name">Валерия Егорова</div>
+                        <div class="level">Знаток города 11 уровня</div>
+                        <span class="date">16 октября 2025</span>
+                        <div class="text">«Долго хожу в это место к мастеру по наращиванию ресниц, Ольге! Всегда воплощает любые мои задумки, будь то цветные ресницы или экстремальные объемы. Всегда разделяет моё желание помолчать и поспать на процедуре…»</div>
+                    </div>
+
+                    <div class="review-card">
+                        <div class="stars">★★★★★</div>
+                        <div class="name">Варя Сокольская</div>
+                        <div class="level">Знаток города 4 уровня</div>
+                        <span class="date">15 октября 2025</span>
+                        <div class="text">«Была несколько раз на полном образе (макияж+прическа) у визажиста Алёны. Самый лучший макияж и прическа в городе! Советую всем!!!»</div>
+                    </div>
+
+                    <div class="review-card">
+                        <div class="stars">★★★★★</div>
+                        <div class="name">Александра</div>
+                        <div class="level">Знаток города 6 уровня</div>
+                        <span class="date">17 октября 2025</span>
+                        <div class="text">«Студия уютная и красивая, много хороших мастеров, сразу можно собраться на любое мероприятие (макияж/причёска/бровки/маникюр/педикюр) все включено 😌 Волшебница по макияжу Алёна Щербина 💗😍, лучшая в этом…»</div>
+                    </div>
+
+                    <div class="review-card">
+                        <div class="stars">★★★★★</div>
+                        <div class="name">Татьяна Д.</div>
+                        <div class="level">Знаток города 4 уровня</div>
+                        <span class="date">17 октября 2025</span>
+                        <div class="text">«Была у Алены ни один раз и я в восторге!!! Макияж держится до последнего, все было выполнено качественно и со вкусом!»</div>
+                    </div>
+
+                    <div class="review-card">
+                        <div class="stars">★★★★★</div>
+                        <div class="name">Александра</div>
+                        <div class="level">Знаток города 2 уровня</div>
+                        <span class="date">15 октября 2025</span>
+                        <div class="text">«Спасибо большое за прекрасную работу 💗, мастер сделала бровки какие я и хотела. Все было сделано очень аккуратно, быстро и безболезненно. В салоне невероятно уютно и красиво, обязательно вернусь еще 🤍🤍🤍»</div>
+                    </div>
+
+                    <div class="review-card">
+                        <div class="stars">★★★★★</div>
+                        <div class="name">Дмитрий Щ.</div>
+                        <div class="level">Знаток города 3 уровня</div>
+                        <span class="date">14 октября 2025</span>
+                        <div class="text">«Курс массажа и спина по заводским настройкам!»</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ===== ПОРТФОЛИО (40 фото) ===== -->
+            <div class="page" id="page-gallery">
+                <h2 class="section-title">Наши <span>работы</span></h2>
+                <p class="section-sub">Более 40 примеров нашего творчества</p>
+                <div class="gallery-grid" id="galleryGrid">
+                    <!-- Фото будут подгружаться автоматически через JavaScript -->
+                </div>
+            </div>
+
+            <!-- ===== ОНЛАЙН-ЗАПИСЬ ===== -->
+            <div class="page" id="page-booking">
+                <h2 class="section-title">Онлайн-<span>запись</span></h2>
+                <p class="section-sub">Заполните форму, и мы свяжемся с вами</p>
+                <div class="booking-widget">
+                    <h3>📅 Записаться</h3>
+                    <p class="sub">Выберите категорию, услугу, мастера и удобное время</p>
+                    <form id="bookingForm" onsubmit="submitBooking(event)">
+                        <label>Ваше имя</label>
+                        <input type="text" placeholder="Имя" required />
+
+                        <label>Телефон</label>
+                        <input type="tel" id="phoneInput" placeholder="+7 (___) ___-__-__" required />
+
+                        <label>Категория</label>
+                        <select id="categorySelect">
+                            <option value="">Выберите категорию</option>
+                            <option value="makeup">💄 Макияж</option>
+                            <option value="full">👑 Макияж + прическа</option>
+                            <option value="hair">💇 Прически</option>
+                            <option value="training">📚 Обучение</option>
+                            <option value="departure">🚗 Выезд</option>
+                        </select>
+
+                        <label>Услуга</label>
+                        <select id="serviceSelect">
+                            <option value="">Сначала выберите категорию</option>
+                        </select>
+
+                        <label>Мастер</label>
+                        <select>
+                            <option>Алёна Щербина (визаж)</option>
+                        </select>
+
+                        <label>Дата</label>
+                        <input type="date" />
+
+                        <label>Время</label>
+                        <input type="time" />
+
+                        <button type="submit" class="btn-primary">Отправить заявку</button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- ===== КОНТАКТЫ ===== -->
+            <div class="page" id="page-contacts">
+                <h2 class="section-title">Наши <span>контакты</span></h2>
+                <p class="section-sub">Свяжитесь с нами любым удобным способом</p>
+                <div class="contacts-grid">
+                    <div class="contacts-info">
+                        <p><span class="label">Адрес</span> ул. Пушкина, 2/1, Энгельс</p>
+                        <p><span class="label">Телефон</span> <a href="tel:+79018073574">+7 (901) 807-35-74</a></p>
+                        <p><span class="label">Режим</span> 10:00 — 21:00 (ежедневно)</p>
+                        <p><span class="label">Email</span> <a href="mailto:info@eshers.ru">info@eshers.ru</a></p>
+                        <div class="social-links">
+                            <a href="#">Instagram</a>
+                            <a href="#">Telegram</a>
+                            <a href="#">WhatsApp</a>
+                        </div>
+                    </div>
+                    <div class="map-container">
+                        <iframe
+                            src="https://yandex.com/map-widget/v1/?ll=46.129001%2C51.497953&z=16.84&what=org%3B35580790222"
+                            width="100%"
+                            height="400"
+                            frameborder="0"
+                            allowfullscreen="true"
+                            style="border-radius: 12px;">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- ===== ФУТЕР ===== -->
+    <footer class="footer">
+        <div class="container">
+            <span class="brand">эшерс</span> · искусство быть собой · © 2026
+        </div>
+    </footer>
+
+    <!-- ===== LIGHTBOX ===== -->
+    <div id="lightbox" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.92); z-index: 9999; align-items: center; justify-content: center; flex-direction: column; backdrop-filter: blur(8px);">
+        <button id="closeLightbox" style="position: absolute; top: 30px; right: 40px; background: none; border: none; color: #fff; font-size: 48px; cursor: pointer; transition: 0.3s; z-index: 10000; font-family: 'Georgia', serif;">&times;</button>
+        <button id="prevPhoto" style="position: absolute; left: 30px; top: 50%; transform: translateY(-50%); background: none; border: none; color: #fff; font-size: 48px; cursor: pointer; transition: 0.3s; z-index: 10000; font-family: 'Georgia', serif;">&#10094;</button>
+        <button id="nextPhoto" style="position: absolute; right: 30px; top: 50%; transform: translateY(-50%); background: none; border: none; color: #fff; font-size: 48px; cursor: pointer; transition: 0.3s; z-index: 10000; font-family: 'Georgia', serif;">&#10095;</button>
+        <img id="lightboxImg" src="" alt="Фото" style="max-width: 90%; max-height: 85vh; border-radius: 12px; box-shadow: 0 0 60px rgba(0,0,0,0.8); object-fit: contain;" />
+        <span id="photoCounter" style="color: #aaa; font-family: 'Segoe UI', Arial, sans-serif; font-size: 16px; margin-top: 16px; letter-spacing: 1px;"></span>
+    </div>
+
+    <!-- ===== JAVASCRIPT ===== -->
+    <script>
+        const navLinks = document.querySelectorAll('.nav a[data-page]');
+        const pages = document.querySelectorAll('.page');
+
+        // ===== ФУНКЦИЯ ЗАГРУЗКИ ГАЛЕРЕИ =====
+        function loadGallery() {
+            const gallery = document.getElementById('galleryGrid');
+            if (!gallery) return;
+            if (gallery.dataset.loaded === 'true') return;
+
+            const totalPhotos = 40;
+            const basePath = 'images/';
+            const extension = '.jpg';
+
+            let html = '';
+            for (let i = 1; i <= totalPhotos; i++) {
+                html += `
+                    <div class="gallery-item" 
+                         style="background-image: url('${basePath}${i}${extension}'); cursor: pointer;" 
+                         onclick="openLightbox(${i - 1})">
+                        <span class="placeholder-text" style="display: none;">Фото ${i}</span>
+                    </div>
+                `;
+            }
+            gallery.innerHTML = html;
+            gallery.dataset.loaded = 'true';
+        }
+
+        // ===== НАВИГАЦИЯ =====
+        function navigateTo(pageId) {
+            pages.forEach(p => p.classList.remove('active'));
+            const target = document.getElementById('page-' + pageId);
+            if (target) target.classList.add('active');
+
+            if (pageId === 'gallery') {
+                setTimeout(loadGallery, 150);
+            }
+
+            navLinks.forEach(link => link.classList.remove('active'));
+            navLinks.forEach(link => {
+                if (link.dataset.page === pageId) link.classList.add('active');
+            });
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        navLinks.forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                navigateTo(this.dataset.page);
+            });
+        });
+
+        window.navigateTo = navigateTo;
+
+function submitBooking(e) {
+    e.preventDefault();
+    
+    const form = e.target;
+    const name = form.querySelector('input[placeholder="Имя"]').value;
+    const phone = document.getElementById('phoneInput').value;
+    const category = document.getElementById('categorySelect').value;
+    const service = document.getElementById('serviceSelect').value;
+    const master = form.querySelector('select:nth-of-type(3)').value;
+    const date = form.querySelector('input[type="date"]').value;
+    const timeSlot = form.querySelector('input[type="time"]').value;
+    
+    if (!name || !phone || !category || !service) {
+        alert('⚠️ Пожалуйста, заполните все обязательные поля');
+        return;
+    }
+    
+    // ===== УБИРАЕМ ВСЁ, КРОМЕ ЦИФР =====
+    const cleanPhone = phone.replace(/\D/g, '');
+    
+    const data = {
+        name: name,
+        phone: cleanPhone,  // ← отправляем только цифры
+        category: category,
+        service: service,
+        master: master,
+        date: date,
+        timeSlot: timeSlot
+    };
+    
+    fetch('https://script.google.com/macros/s/AKfycbwz1C_fp_5tHqCWSTP-X4AaJFLN_uEHrdWP_r3rKTl3fPXYw-IsQ-2AuVUSOtHQ-5Uc/exec', {  // ← сюда свой URL
+        method: 'POST',
+        mode: 'no-cors',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(data)
+    })
+    .then(() => {
+        alert('✅ Заявка отправлена! Мы свяжемся с вами в ближайшее время.');
+        form.reset();
+        document.getElementById('categorySelect').value = '';
+        document.getElementById('serviceSelect').innerHTML = '<option value="">Сначала выберите категорию</option>';
+    })
+    .catch((error) => {
+        console.error('Ошибка:', error);
+        alert('❌ Ошибка отправки. Попробуйте ещё раз.');
+    });
+}
+
+window.submitBooking = submitBooking;
+
+        // ===== ЗАГРУЗКА ГАЛЕРЕИ ПРИ СТАРТЕ =====
+        document.addEventListener('DOMContentLoaded', function() {
+            const activePage = document.querySelector('.page.active');
+            if (activePage && activePage.id === 'page-gallery') {
+                loadGallery();
+            }
+        });
+
+        // ===== LIGHTBOX =====
+        let currentPhotoIndex = 0;
+        const totalPhotos = 40;
+
+        function openLightbox(index) {
+            currentPhotoIndex = index;
+            const lightbox = document.getElementById('lightbox');
+            const img = document.getElementById('lightboxImg');
+            const counter = document.getElementById('photoCounter');
+            const extension = '.jpg';
+
+            img.src = `images/${index + 1}${extension}`;
+            counter.textContent = `${index + 1} / ${totalPhotos}`;
+            lightbox.style.display = 'flex';
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeLightbox() {
+            document.getElementById('lightbox').style.display = 'none';
+            document.body.style.overflow = 'auto';
+        }
+
+        function changePhoto(direction) {
+            let newIndex = currentPhotoIndex + direction;
+            if (newIndex < 0) newIndex = totalPhotos - 1;
+            if (newIndex >= totalPhotos) newIndex = 0;
+            openLightbox(newIndex);
+        }
+
+        document.getElementById('closeLightbox').addEventListener('click', closeLightbox);
+        document.getElementById('prevPhoto').addEventListener('click', () => changePhoto(-1));
+        document.getElementById('nextPhoto').addEventListener('click', () => changePhoto(1));
+
+        document.getElementById('lightbox').addEventListener('click', function(e) {
+            if (e.target === this) closeLightbox();
+        });
+
+        // ===== ОБРАБОТЧИКИ КЛАВИШ (только когда Lightbox открыт) =====
+document.addEventListener('keydown', function(e) {
+    const lightbox = document.getElementById('lightbox');
+    const isLightboxOpen = lightbox.style.display === 'flex';
+    
+    if (!isLightboxOpen) return; // Если Lightbox закрыт — не реагируем на стрелки
+    
+    if (e.key === 'Escape') closeLightbox();
+    if (e.key === 'ArrowLeft') changePhoto(-1);
+    if (e.key === 'ArrowRight') changePhoto(1);
+});
+
+        // ===== АВТОФОРМАТ ТЕЛЕФОНА =====
+        const phoneInput = document.getElementById('phoneInput');
+        if (phoneInput) {
+            phoneInput.addEventListener('input', function(e) {
+                let value = this.value.replace(/\D/g, '');
+                if (value.length === 0) {
+                    this.value = '';
+                    return;
+                }
+                if (value.length > 11) value = value.slice(0, 11);
+                
+                let formatted = '+7';
+                if (value.length > 1) {
+                    formatted += ' (' + value.slice(1, 4);
+                }
+                if (value.length >= 4) {
+                    formatted += ') ' + value.slice(4, 7);
+                }
+                if (value.length >= 7) {
+                    formatted += '-' + value.slice(7, 9);
+                }
+                if (value.length >= 9) {
+                    formatted += '-' + value.slice(9, 11);
+                }
+                this.value = formatted;
+            });
+        }
+
+        // ===== ДИНАМИЧЕСКИЙ ВЫБОР УСЛУГ =====
+        const categorySelect = document.getElementById('categorySelect');
+        const serviceSelect = document.getElementById('serviceSelect');
+
+        const servicesMap = {
+            makeup: [
+                'Нюдовый макияж',
+                'Вечерний макияж',
+                'Свадебный макияж',
+                'Лифтинг-макияж',
+                'Экспресс макияж'
+            ],
+            full: [
+                'Свадебный образ',
+                'Детский образ',
+                'Полный образ'
+            ],
+            hair: [
+                'Прическа'
+            ],
+            training: [
+                'Курс по прическам',
+                'Базовый курс «Визажист с нуля»',
+                'Повышение для визажистов',
+                'Курс «Сам себе визажист» 1 день',
+                'Курс «Сам себе визажист» 2 дня'
+            ],
+            departure: [
+                'Выезд по городу',
+                'Выезд в район'
+            ]
+        };
+
+        if (categorySelect && serviceSelect) {
+            categorySelect.addEventListener('change', function() {
+                const category = this.value;
+                serviceSelect.innerHTML = '<option value="">Выберите услугу</option>';
+                
+                if (category && servicesMap[category]) {
+                    servicesMap[category].forEach(service => {
+                        const option = document.createElement('option');
+                        option.textContent = service;
+                        option.value = service;
+                        serviceSelect.appendChild(option);
+                    });
+                }
+            });
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,883 @@
+/* ===== БАЗА ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    font-family: 'Georgia', 'Times New Roman', serif;
+    background: #0d0b0a;
+    color: #e8ddd0;
+    line-height: 1.7;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+/* ===== РАСТЯГИВАЕМ КОНТЕНТ ===== */
+.page-wrapper {
+    flex: 1 0 auto;
+}
+
+/* ===== ШАПКА ===== */
+.header {
+    background: rgba(13, 11, 10, 0.92);
+    backdrop-filter: blur(12px);
+    padding: 18px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid rgba(212, 184, 160, 0.12);
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 14px;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: 400;
+    letter-spacing: 6px;
+    text-transform: lowercase;
+    color: #d4b8a0;
+}
+
+.logo span {
+    color: #f5e6d8;
+    font-weight: 300;
+    letter-spacing: 8px;
+}
+
+.logo .sub {
+    display: block;
+    font-size: 10px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: #b8a090;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin-top: 2px;
+}
+
+.nav {
+    display: flex;
+    gap: 28px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.nav a {
+    color: #c8b8aa;
+    font-size: 13px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    padding: 4px 0;
+    border-bottom: 1.5px solid transparent;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.nav a:hover,
+.nav a.active {
+    border-bottom-color: #d4b8a0;
+    color: #f5e6d8;
+}
+
+.nav .phone-link {
+    color: #f5e6d8;
+    background: rgba(212, 184, 160, 0.12);
+    padding: 8px 22px;
+    border-radius: 30px;
+    border: 1px solid rgba(212, 184, 160, 0.2);
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.nav .phone-link:hover {
+    background: rgba(212, 184, 160, 0.22);
+    border-color: #d4b8a0;
+}
+
+/* ===== СТРАНИЦЫ ===== */
+.page {
+    display: none;
+    padding: 50px 0 60px;
+    animation: fadeIn 0.5s ease;
+}
+
+.page.active {
+    display: block;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ===== ГЛАВНАЯ ===== */
+.hero {
+    text-align: center;
+    padding: 50px 0 30px;
+}
+
+.hero .brand {
+    font-size: 72px;
+    font-weight: 300;
+    letter-spacing: 12px;
+    text-transform: lowercase;
+    color: #f5e6d8;
+    line-height: 1.1;
+}
+
+.hero .brand span {
+    color: #d4b8a0;
+    font-weight: 700;
+}
+
+.hero .slogan {
+    font-size: 20px;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+    color: #b8a090;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin-top: 10px;
+    font-weight: 300;
+}
+
+.hero .divider {
+    width: 80px;
+    height: 1.5px;
+    background: #d4b8a0;
+    margin: 28px auto;
+}
+
+.hero .desc {
+    font-size: 18px;
+    color: #c8b8aa;
+    max-width: 680px;
+    margin: 0 auto 36px;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    font-weight: 300;
+    line-height: 1.8;
+}
+
+.hero .btn-group {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.btn-primary {
+    display: inline-block;
+    background: #d4b8a0;
+    color: #0d0b0a;
+    padding: 14px 48px;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.4s;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+.btn-primary:hover {
+    background: #f5e6d8;
+    transform: scale(1.02);
+    box-shadow: 0 0 40px rgba(212, 184, 160, 0.15);
+}
+
+.btn-secondary {
+    display: inline-block;
+    background: transparent;
+    color: #d4b8a0;
+    padding: 14px 44px;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    border: 1.5px solid #d4b8a0;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.4s;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+.btn-secondary:hover {
+    background: #d4b8a0;
+    color: #0d0b0a;
+}
+
+/* ===== БЛОКИ ОБЩИЕ ===== */
+.section-title {
+    font-size: 40px;
+    font-weight: 300;
+    text-align: center;
+    letter-spacing: 4px;
+    margin-bottom: 10px;
+    color: #f5e6d8;
+}
+
+.section-title span {
+    color: #d4b8a0;
+    font-weight: 700;
+}
+
+.section-sub {
+    text-align: center;
+    color: #b8a090;
+    font-size: 16px;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    max-width: 600px;
+    margin: 0 auto 44px;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+.divider-gold {
+    width: 60px;
+    height: 1.5px;
+    background: #d4b8a0;
+    margin: 0 auto 36px;
+}
+
+/* ===== О НАС ===== */
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: center;
+}
+
+.about-text p {
+    color: #c8b8aa;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.9;
+    margin-bottom: 16px;
+    font-weight: 300;
+}
+
+.about-text .highlight {
+    color: #d4b8a0;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.about-image {
+    background: #1f1a17;
+    border-radius: 12px;
+    aspect-ratio: 4/3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #888;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    font-size: 15px;
+    border: 1px solid #2a221e;
+}
+
+.about-image .placeholder {
+    text-align: center;
+}
+
+.about-image .placeholder .icon {
+    font-size: 48px;
+    display: block;
+    margin-bottom: 8px;
+}
+
+/* ===== ЦЕННОСТИ ===== */
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 24px;
+    margin-top: 20px;
+}
+
+.value-card {
+    background: #14100e;
+    padding: 30px 20px;
+    border-radius: 12px;
+    text-align: center;
+    border: 1px solid #1f1a17;
+    transition: 0.3s;
+}
+
+.value-card:hover {
+    border-color: #d4b8a0;
+}
+
+.value-card .icon {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.value-card h4 {
+    font-size: 17px;
+    color: #f5e6d8;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.value-card p {
+    color: #b8a090;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    margin-top: 4px;
+}
+
+/* ===== УСЛУГИ ===== */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 24px;
+}
+
+.service-card {
+    background: #14100e;
+    padding: 30px 20px;
+    border-radius: 12px;
+    border: 1px solid #1f1a17;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.service-card:hover {
+    border-color: #d4b8a0;
+    transform: translateY(-4px);
+}
+
+.service-card .icon {
+    font-size: 40px;
+    margin-bottom: 8px;
+}
+
+.service-card h3 {
+    font-size: 19px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: #f5e6d8;
+}
+
+.service-card .desc {
+    color: #b8a090;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    margin: 4px 0 8px;
+}
+
+.service-card .price {
+    color: #d4b8a0;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+/* ===== ОТЗЫВЫ ===== */
+.reviews-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 24px;
+}
+
+.review-card {
+    background: #14100e;
+    padding: 24px 20px;
+    border-radius: 12px;
+    border: 1px solid #1f1a17;
+    transition: 0.3s;
+}
+
+.review-card:hover {
+    border-color: #d4b8a0;
+}
+
+.review-card .name {
+    font-size: 17px;
+    font-weight: 600;
+    color: #f5e6d8;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+.review-card .level {
+    color: #b8a090;
+    font-size: 13px;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+.review-card .date {
+    color: #888;
+    font-size: 12px;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.review-card .text {
+    color: #c8b8aa;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    font-size: 15px;
+    line-height: 1.7;
+    font-weight: 300;
+}
+
+.review-card .stars {
+    color: #d4b8a0;
+    font-size: 18px;
+    letter-spacing: 2px;
+    margin-bottom: 4px;
+}
+
+/* ===== МАСТЕРА ===== */
+.masters-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 28px;
+}
+
+.master-card {
+    background: #14100e;
+    padding: 24px 16px;
+    border-radius: 12px;
+    text-align: center;
+    border: 1px solid #1f1a17;
+    transition: 0.3s;
+}
+
+.master-card:hover {
+    border-color: #d4b8a0;
+}
+
+.master-card .avatar {
+    font-size: 56px;
+    margin-bottom: 6px;
+}
+
+.master-card h3 {
+    font-size: 19px;
+    font-weight: 400;
+    color: #f5e6d8;
+    letter-spacing: 1px;
+}
+
+.master-card .spec {
+    color: #b8a090;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.master-card .exp {
+    font-size: 13px;
+    color: #d4b8a0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    font-weight: 600;
+    margin-top: 4px;
+}
+
+/* ===== ПОРТФОЛИО ===== */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+}
+
+.gallery-item {
+    aspect-ratio: 1 / 1;
+    background: #1f1a17;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid #2a221e;
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #888;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    font-size: 14px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.gallery-item:hover {
+    border-color: #d4b8a0;
+    transform: scale(1.02);
+    box-shadow: 0 0 30px rgba(212, 184, 160, 0.08);
+}
+
+.gallery-item .placeholder-text {
+    display: none;
+}
+
+/* ===== ОНЛАЙН-ЗАПИСЬ ===== */
+.booking-widget {
+    background: #14100e;
+    padding: 40px 36px;
+    border-radius: 14px;
+    max-width: 520px;
+    margin: 0 auto;
+    border: 1px solid #1f1a17;
+}
+
+.booking-widget h3 {
+    font-size: 24px;
+    font-weight: 300;
+    text-align: center;
+    letter-spacing: 2px;
+    color: #f5e6d8;
+    margin-bottom: 4px;
+}
+
+.booking-widget .sub {
+    text-align: center;
+    color: #b8a090;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    margin-bottom: 24px;
+}
+
+.booking-widget label {
+    display: block;
+    font-size: 13px;
+    color: #c8b8aa;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    letter-spacing: 1px;
+    margin-bottom: 4px;
+}
+
+.booking-widget input,
+.booking-widget select {
+    width: 100%;
+    padding: 14px 16px;
+    margin-bottom: 16px;
+    border-radius: 8px;
+    border: 1px solid #2a221e;
+    background: #0d0b0a;
+    color: #f5e6d8;
+    font-size: 15px;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    transition: 0.3s;
+}
+
+.booking-widget input:focus,
+.booking-widget select:focus {
+    border-color: #d4b8a0;
+    outline: none;
+}
+
+.booking-widget input::placeholder {
+    color: #777;
+}
+
+.booking-widget .btn-primary {
+    width: 100%;
+    background: #d4b8a0;
+    color: #0d0b0a;
+    padding: 16px;
+    font-size: 15px;
+}
+
+.booking-widget .btn-primary:hover {
+    background: #f5e6d8;
+}
+
+/* ===== КОНТАКТЫ ===== */
+.contacts-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: start;
+}
+
+.contacts-info p {
+    font-size: 17px;
+    margin-bottom: 14px;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    color: #c8b8aa;
+}
+
+.contacts-info .label {
+    color: #b8a090;
+    min-width: 70px;
+    font-size: 13px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+.contacts-info a {
+    color: #d4b8a0;
+    transition: 0.3s;
+}
+
+.contacts-info a:hover {
+    color: #f5e6d8;
+}
+
+.social-links {
+    display: flex;
+    gap: 16px;
+    margin-top: 16px;
+    flex-wrap: wrap;
+}
+
+.social-links a {
+    color: #b8a090;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    font-size: 13px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border: 1px solid #2a221e;
+    padding: 6px 20px;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+.social-links a:hover {
+    border-color: #d4b8a0;
+    color: #f5e6d8;
+}
+
+.map-container {
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid #2a221e;
+    min-height: 400px;
+    background: #14100e;
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 400px;
+    border: none;
+    display: block;
+}
+
+/* ===== ФУТЕР ===== */
+.footer {
+    flex-shrink: 0;
+    background: #0a0807;
+    padding: 24px 0;
+    text-align: center;
+    color: #777;
+    font-size: 13px;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    border-top: 1px solid #14100e;
+}
+
+.footer .brand {
+    color: #b8a090;
+    font-family: 'Georgia', serif;
+    letter-spacing: 2px;
+}
+
+/* ===== АДАПТИВ ===== */
+@media (max-width: 1024px) {
+    .about-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .hero .brand {
+        font-size: 52px;
+        letter-spacing: 8px;
+    }
+
+    .contacts-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .reviews-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .gallery-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .header .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav {
+        justify-content: center;
+        gap: 16px;
+    }
+
+    .nav a {
+        font-size: 12px;
+        letter-spacing: 1px;
+    }
+
+    .hero .brand {
+        font-size: 38px;
+        letter-spacing: 6px;
+    }
+
+    .hero .slogan {
+        font-size: 15px;
+        letter-spacing: 4px;
+    }
+
+    .hero .desc {
+        font-size: 15px;
+    }
+
+    .section-title {
+        font-size: 30px;
+    }
+
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+    }
+
+    .booking-widget {
+        padding: 28px 20px;
+    }
+
+    .btn-primary,
+    .btn-secondary {
+        padding: 12px 32px;
+        font-size: 12px;
+    }
+
+    .contacts-info p {
+        font-size: 15px;
+        flex-wrap: wrap;
+    }
+
+    .map-container,
+    .map-container iframe {
+        height: 300px;
+        min-height: 300px;
+    }
+
+    .reviews-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero .brand {
+        font-size: 28px;
+        letter-spacing: 4px;
+    }
+
+    .hero .slogan {
+        font-size: 12px;
+        letter-spacing: 3px;
+    }
+
+    .gallery-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 8px;
+    }
+
+    .nav {
+        gap: 10px;
+    }
+
+    .nav a {
+        font-size: 10px;
+        letter-spacing: 0.5px;
+    }
+
+    .nav .phone-link {
+        font-size: 12px;
+        padding: 6px 16px;
+    }
+
+    .section-title {
+        font-size: 24px;
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .masters-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .values-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .map-container,
+    .map-container iframe {
+        height: 250px;
+        min-height: 250px;
+    }
+}
+/* ===== ФОТО В УСЛУГАХ ===== */
+.service-image {
+    width: 100%;
+    height: 200px;
+    background: #1f1a17;
+    border-radius: 10px;
+    margin-bottom: 14px;
+    background-size: cover;
+    background-position: center;
+    transition: 0.3s;
+}
+
+.service-card:hover .service-image {
+    transform: scale(1.01);
+    box-shadow: 0 0 30px rgba(212, 184, 160, 0.05);
+}
+
+@media (max-width: 768px) {
+    .service-image {
+        height: 160px;
+    }
+}
+
+@media (max-width: 480px) {
+    .service-image {
+        height: 140px;
+    }
+}
